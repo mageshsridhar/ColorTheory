@@ -2,7 +2,7 @@
 An interactive iOS game that teaches the fundamentals of color theory. Each level is a short puzzle: put shuffled colors back in order, then read a quick recap of the idea behind them.
 
 <div align="center">
-  <img src="docs/demo.webp" width="280" alt="Opening the Primary Colors level, reading how to play, and swapping color blocks into order" />
+  <img src="docs/demo.webp" width="300" alt="Opening the Primary Colors level, reading how to play, and swapping color blocks into order" />
 </div>
 
 ### How to play
