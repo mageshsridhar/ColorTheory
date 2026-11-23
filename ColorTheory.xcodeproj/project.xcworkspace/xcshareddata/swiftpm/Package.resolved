@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "GlassMorphismic",
-        "repositoryURL": "https://github.com/taichi-dm/GlassMorphismic",
-        "state": {
-          "branch": "main",
-          "revision": "d48a825af6839f7b1ae35b2cf5f2ded6806519c9",
-          "version": null
-        }
+  "originHash" : "e73aeb91b38edf943bcc28683d6465537883aa1137670367eb2bf61bc6143ff3",
+  "pins" : [
+    {
+      "identity" : "glassmorphismic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/taichi-dm/GlassMorphismic",
+      "state" : {
+        "revision" : "d48a825af6839f7b1ae35b2cf5f2ded6806519c9"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 3
 }

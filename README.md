@@ -23,14 +23,31 @@ Tap an unlocked color, then tap another to swap them. Blocks with a lock stay wh
 
 ### It's all in the details:
 - Every level pairs its puzzle with a short explanation, plus a How to Play overlay and a recap when you finish.
+- Next Level takes you straight into the following lesson, and your progress is saved between launches.
 - Swaps are animated. Picking a color, swapping it and finishing a level each play their own sound.
+- The color wheel diagrams are drawn in SwiftUI from the game's own palette.
+- Boards size themselves to the screen, so the game works on iPhone and on iPad in any orientation.
+- VoiceOver reads each block's color name, hue, brightness and position.
 - Finishing all eight levels unlocks a final screen where you can start over.
 
 ### Tools and Frameworks used:
 - SwiftUI
-- SpriteKit, shown inside SwiftUI with `SpriteView`
-- [GlassMorphismic](https://github.com/taichi-dm/GlassMorphismic) for the blurred overlays
+- SpriteKit, shown inside SwiftUI with `SpriteView`. One shared scene runs every level.
+- [GlassMorphismic](https://github.com/taichi-dm/GlassMorphismic) for the blurred overlays, pinned to a fixed commit
 
 ### Requirements
-- iOS 14 or later
-- Xcode with Swift Package Manager, which fetches GlassMorphismic
+- iOS 15 or later
+- Xcode 15 or later. Swift Package Manager fetches GlassMorphismic.
+
+### Tests
+The puzzle rules, every level's layout and saved progress are covered by unit tests. Run them with ⌘U in Xcode, or:
+```sh
+xcodebuild test -project ColorTheory.xcodeproj -scheme ColorTheory -destination 'platform=iOS Simulator,name=iPhone 16 Pro'
+```
+
+### Credits
+- Warm colors photo by [Birger Strahl](https://unsplash.com/photos/t6fQwCYrIcw) and cool colors photo by [David Becker](https://unsplash.com/photos/dMeEJRE18VI), both on Unsplash.
+- The About screen photo is also from Unsplash.
+
+### License
+[MIT](LICENSE)
